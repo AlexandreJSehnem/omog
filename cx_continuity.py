@@ -49,12 +49,12 @@ def bspline(pontos, vetor_nos, grau, t):
 # alem disso, cada valor de t_values esta a uma distancia fixa um do outro
 vetor_t = np.linspace(vetor_nos[grau], vetor_nos[-(grau + 1)], num=100)
 
+# utimo ponto eh aproximado
+vetor_t[-1] = vetor_t[-1] - 0.00001
 
 curva_final = [bspline(pontos, vetor_nos, grau, t) for t in vetor_t]
 
-# Nota ao professor: eu nao consegui fazer o ultimo ponto da spline interpolar com o ultimo ponto de controle, vou tirar duvida sobre isso na sala
-curva_final[-1] = pontos[-1]
-
+# pontos b-spline
 x_spline = [ponto[0] for ponto in curva_final]
 y_spline = [ponto[1] for ponto in curva_final]
 
