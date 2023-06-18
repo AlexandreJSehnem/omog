@@ -7,7 +7,7 @@
 #       - biblioteca numpy, comando: pip install numpy
 #       - biblioteca matplotlib, comando: pip install matplotlib
 #
-#   Comando para executar: python C0_Alexandre.py
+#   Comando para executar: python cx_continuity.py
 
 
 # Descrição: este código implementa uma curva B-sppline de grau 6, uma bezier de grau 3 e então unifica as duas com continuidade C0
